@@ -22,11 +22,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (theme === 'dark') {
       iconLuna.style.display = 'none';
       iconSol.style.display = 'inline';
-      document.body.classList.add('dark-mode');
     } else {
       iconLuna.style.display = 'inline';
       iconSol.style.display = 'none';
-      document.body.classList.remove('dark-mode');
     }
   }
 });
