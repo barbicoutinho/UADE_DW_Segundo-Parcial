@@ -135,3 +135,10 @@ body {
 .container-custom {
     flex: 1;
 }
+/* Eliminar márgenes y bordes no deseados */
+body, .container-custom {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
