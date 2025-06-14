@@ -21,6 +21,9 @@ body {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .navbar-brand {
@@ -50,7 +53,8 @@ body {
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     width: 90%;
-    flex: 1; /* para ocupar el espacio restante y empujar footer abajo */
+    /* flex: 1; */
+    /* Quité flex:1 para evitar empujar footer de forma incorrecta */
 }
 
 /* Imágenes */
@@ -90,11 +94,12 @@ footer, .footer-custom {
     text-align: center;
     padding: 15px 20px;
     font-size: 0.9em;
-    margin-top: auto;
+    margin-top: 40px; /* espacio arriba para no pegar al contenido */
     width: 100%;
     box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.1);
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    flex-shrink: 0; /* para que no se reduzca si flexbox está activo */
 }
 
 /* Cartas (por si usás cards de Bootstrap) */
@@ -128,6 +133,11 @@ li {
         padding: 20px;
     }
     footer {
+        font-size: 0.8em;
+        padding: 10px;
+    }
+}
+
         font-size: 0.8em;
         padding: 10px;
     }
