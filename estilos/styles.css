@@ -1,16 +1,21 @@
 /* Estilos Generales */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
     background-color: #FFF5E1;
     color: #2F2F2F;
-    margin: 0;
-    padding: 0;
     line-height: 1.6;
-    height: 100%;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 
+/* Navbar */
 .navbar {
     background-color: #FFCC80;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -43,8 +48,7 @@ body {
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     width: 90%;
-    flex-grow: 1;
-    box-sizing: border-box;
+    flex: 1; /* para ocupar el espacio restante y empujar footer abajo */
 }
 
 /* Imágenes */
@@ -91,7 +95,7 @@ footer, .footer-custom {
     border-top-right-radius: 15px;
 }
 
-/* Cartas */
+/* Cartas (por si usás cards de Bootstrap) */
 .card {
     border: 1px solid #FFCC80;
     border-radius: 12px;
