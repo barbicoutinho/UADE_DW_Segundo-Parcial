@@ -12,6 +12,7 @@
 </head>
 
 <body>
+  <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg">
     <div class="container">
       <a class="navbar-brand fw-bold" href="../index.html">Mi Cursada</a>
@@ -29,8 +30,8 @@
           <li class="nav-item"><a class="nav-link fw-bold" href="contacto.html">Contacto</a></li>
         </ul>
         <div id="themeToggle" style="cursor: pointer; display: flex; align-items: center; gap: 0.5rem;">
-          <img id="icon-luna" src="../icon/luna-color.png" alt="Modo oscuro" width="30" height="30" style="display: inline;" />
-          <img id="icon-sol" src="../icon/sol-brillante.png" alt="Modo claro" width="30" height="30" style="display: none;" />
+          <img id="icon-luna" src="../icon/luna-color.png" alt="Activar modo oscuro" width="30" height="30" style="display: inline;" />
+          <img id="icon-sol" src="../icon/sol-brillante.png" alt="Activar modo claro" width="30" height="30" style="display: none;" />
         </div>
       </div>
     </div>
@@ -45,12 +46,12 @@
       <!-- Columna 1: Fechas de Exámenes + Bibliografía -->
       <div class="col-md-4">
         <div class="row">
-          <!-- Fechas de Exámenes -->
           <div class="col-12 mb-3">
             <div class="bg-light p-3 border">
               <h5>Fecha: Primer Parcial</h5>
               <div class="list-group">
-                <a href="https://virtualbsp.uade.edu.ar/d2l/lms/dropbox/user/folder_submit_files.d2l?db=51311&grpid=0&isprv=0&bp=0&ou=43569" class="list-group-item list-group-item-action" target="_blank" rel="noopener noreferrer">25 de Abril de 2025</a>
+                <a href="https://virtualbsp.uade.edu.ar/d2l/lms/dropbox/user/folder_submit_files.d2l?db=51311&grpid=0&isprv=0&bp=0&ou=43569"
+                  class="list-group-item list-group-item-action" target="_blank" rel="noopener noreferrer">25 de Abril de 2025</a>
               </div>
               <h5 class="mt-3">Fecha: Segundo Parcial</h5>
               <ul class="list-group">
@@ -59,7 +60,6 @@
             </div>
           </div>
 
-          <!-- Bibliografía -->
           <div class="col-12">
             <div class="bg-light p-3 border">
               <h5>Bibliografía</h5>
@@ -73,82 +73,152 @@
         </div>
       </div>
 
-      <!-- Columna 2: Actividades UVAs -->
+      <!-- Columna 2: UVAs -->
       <div class="col-md-8">
         <div class="bg-light p-3 border h-100">
-          <h5>Actividades UVAs</h5>
+          <h5 class="mb-4">Actividades UVAs</h5>
 
-          <div class="list-group">
-            <!-- UVA 1: Introducción -->
-            <div class="list-group-item">
-              <h6>UVA 1: Introducción</h6>
-              <a href="https://github.com/barbicoutinho/UADE_DW_UVA1_Introduccion" class="btn btn-outline-primary btn-sm me-2" target="_blank" rel="noopener noreferrer">Repositorio</a>
-              <a href="https://barbicoutinho.github.io/UADE_DW_UVA1_Introduccion/" class="btn btn-outline-success btn-sm" target="_blank" rel="noopener noreferrer">Ver en GitHub Pages</a>
+          <div class="accordion" id="uvasAccordion">
+            <!-- UVA 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingUVA1">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUVA1"
+                  aria-expanded="true" aria-controls="collapseUVA1">
+                  UVA 1: Introducción al Desarrollo Web
+                </button>
+              </h2>
+              <div id="collapseUVA1" class="accordion-collapse collapse show" aria-labelledby="headingUVA1"
+                data-bs-parent="#uvasAccordion">
+                <div class="accordion-body">
+                  <div class="list-group">
+                    <div class="list-group-item">
+                      <h6>Introducción</h6>
+                      <a href="https://github.com/barbicoutinho/UADE_DW_UVA1_Introduccion" class="btn btn-outline-primary btn-sm me-2" target="_blank">Repositorio</a>
+                      <a href="https://barbicoutinho.github.io/UADE_DW_UVA1_Introduccion/" class="btn btn-outline-success btn-sm" target="_blank">Ver en GitHub Pages</a>
+                    </div>
+                    <div class="list-group-item">
+                      <h6>Etiquetas</h6>
+                      <a href="https://github.com/barbicoutinho/UADE_DW_UVA1_Etiquetas" class="btn btn-outline-primary btn-sm me-2" target="_blank">Repositorio</a>
+                      <a href="https://barbicoutinho.github.io/UADE_DW_UVA1_Etiquetas/" class="btn btn-outline-success btn-sm" target="_blank">Ver en GitHub Pages</a>
+                    </div>
+                    <div class="list-group-item">
+                      <h6>Ejercicio integrador</h6>
+                      <a href="https://github.com/barbicoutinho/UADE_DW_UVA1-Integrador" class="btn btn-outline-primary btn-sm me-2" target="_blank">Repositorio</a>
+                      <a href="https://barbicoutinho.github.io/UADE_DW_UVA1-Integrador/" class="btn btn-outline-success btn-sm" target="_blank">Ver en GitHub Pages</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <!-- UVA 1: Etiquetas -->
-            <div class="list-group-item">
-              <h6>UVA 1: Etiquetas</h6>
-              <a href="https://github.com/barbicoutinho/UADE_DW_UVA1_Etiquetas" class="btn btn-outline-primary btn-sm me-2" target="_blank" rel="noopener noreferrer">Repositorio</a>
-              <a href="https://barbicoutinho.github.io/UADE_DW_UVA1_Etiquetas/" class="btn btn-outline-success btn-sm" target="_blank" rel="noopener noreferrer">Ver en GitHub Pages</a>
+            <!-- UVA 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingUVA2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUVA2"
+                  aria-expanded="false" aria-controls="collapseUVA2">
+                  UVA 2: Maquetación y CSS
+                </button>
+              </h2>
+              <div id="collapseUVA2" class="accordion-collapse collapse" aria-labelledby="headingUVA2"
+                data-bs-parent="#uvasAccordion">
+                <div class="accordion-body">
+                  <div class="list-group">
+                    <div class="list-group-item">
+                      <h6>Formato de Texto</h6>
+                      <a href="https://github.com/barbicoutinho/UADE_DW_UVA2_Formato-de-texto" class="btn btn-outline-primary btn-sm me-2" target="_blank">Repositorio</a>
+                      <a href="https://barbicoutinho.github.io/UADE_DW_UVA2_Formato-de-texto/" class="btn btn-outline-success btn-sm" target="_blank">Ver en GitHub Pages</a>
+                    </div>
+                    <div class="list-group-item">
+                      <h6>Formato de Cajas</h6>
+                      <a href="https://github.com/barbicoutinho/UADE_DW_UVA2_Cajas" class="btn btn-outline-primary btn-sm me-2" target="_blank">Repositorio</a>
+                      <a href="https://barbicoutinho.github.io/UADE_DW_UVA2_Cajas/" class="btn btn-outline-success btn-sm" target="_blank">Ver en GitHub Pages</a>
+                    </div>
+                    <div class="list-group-item">
+                      <h6>Unidades de Medida</h6>
+                      <a href="https://github.com/barbicoutinho/UADE_DW_UVA2_unidades" class="btn btn-outline-primary btn-sm me-2" target="_blank">Repositorio</a>
+                      <a href="https://barbicoutinho.github.io/UADE_DW_UVA2_unidades/" class="btn btn-outline-success btn-sm" target="_blank">Ver en GitHub Pages</a>
+                    </div>
+                    <div class="list-group-item">
+                      <h6>Flexbox y Grid</h6>
+                      <a href="https://github.com/barbicoutinho/UADE_DW_UVA2_Flexbox-y-Grid" class="btn btn-outline-primary btn-sm me-2" target="_blank">Repositorio</a>
+                      <a href="https://barbicoutinho.github.io/UADE_DW_UVA2_Flexbox-y-Grid/" class="btn btn-outline-success btn-sm" target="_blank">Ver en GitHub Pages</a>
+                    </div>
+                    <div class="list-group-item">
+                      <h6>Ejercicio integrador</h6>
+                      <a href="https://github.com/barbicoutinho/UADE_DW_UVA2_integrador" class="btn btn-outline-primary btn-sm me-2" target="_blank">Repositorio</a>
+                      <a href="https://barbicoutinho.github.io/UADE_DW_UVA2_integrador/" class="btn btn-outline-success btn-sm" target="_blank">Ver en GitHub Pages</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <!-- UVA 1: Ejercicio integrador -->
-            <div class="list-group-item">
-              <h6>UVA 1: Ejercicio integrador</h6>
-              <a href="https://github.com/barbicoutinho/UADE_DW_UVA1-Integrador" class="btn btn-outline-primary btn-sm me-2" target="_blank" rel="noopener noreferrer">Repositorio</a>
-              <a href="https://barbicoutinho.github.io/UADE_DW_UVA1-Integrador/" class="btn btn-outline-success btn-sm" target="_blank" rel="noopener noreferrer">Ver en GitHub Pages</a>
+            <!-- UVA 3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingUVA3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUVA3"
+                  aria-expanded="false" aria-controls="collapseUVA3">
+                  UVA 3: Introducción al JavaScript
+                </button>
+              </h2>
+              <div id="collapseUVA3" class="accordion-collapse collapse" aria-labelledby="headingUVA3"
+                data-bs-parent="#uvasAccordion">
+                <div class="accordion-body">
+                  <div class="list-group">
+                    <div class="list-group-item">
+                      <h6>Ejercicio JavaScript</h6>
+                      <a href="https://github.com/barbicoutinho/UADE_DW_UVA3_Ej_JavaScript" class="btn btn-outline-primary btn-sm me-2" target="_blank">Repositorio</a>
+                      <a href="https://barbicoutinho.github.io/UADE_DW_UVA3_Ej_JavaScript/ej1.html" class="btn btn-outline-success btn-sm" target="_blank">GitHub Pages 1</a>
+                      <a href="https://barbicoutinho.github.io/UADE_DW_UVA3_Ej_JavaScript/ej2.html" class="btn btn-outline-success btn-sm" target="_blank">GitHub Pages 2</a>
+                      <a href="https://barbicoutinho.github.io/UADE_DW_UVA3_Ej_JavaScript/ej3.html" class="btn btn-outline-success btn-sm" target="_blank">GitHub Pages 3</a>
+                    </div>
+                    <div class="list-group-item">
+                      <h6>Formularios</h6>
+                      <a href="https://github.com/barbicoutinho/UADE_DW_UVA3_JS_Formulario" class="btn btn-outline-primary btn-sm me-2" target="_blank">Repositorio</a>
+                      <a href="https://barbicoutinho.github.io/UADE_DW_UVA3_JS_Formulario/" class="btn btn-outline-success btn-sm" target="_blank">Ver en GitHub Pages</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <!-- UVA 2: Formato de Texto -->
-            <div class="list-group-item">
-              <h6>UVA 2: Formato de Texto</h6>
-              <a href="https://github.com/barbicoutinho/UADE_DW_UVA2_Formato-de-texto" class="btn btn-outline-primary btn-sm me-2" target="_blank" rel="noopener noreferrer">Repositorio</a>
-              <a href="https://barbicoutinho.github.io/UADE_DW_UVA2_Formato-de-texto/" class="btn btn-outline-success btn-sm" target="_blank" rel="noopener noreferrer">Ver en GitHub Pages</a>
+            <!-- UVA 4 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingUVA4">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUVA4"
+                  aria-expanded="false" aria-controls="collapseUVA4">
+                  UVA 4: Despliegue
+                </button>
+              </h2>
+              <div id="collapseUVA4" class="accordion-collapse collapse" aria-labelledby="headingUVA4"
+                data-bs-parent="#uvasAccordion">
+                <div class="accordion-body">
+                  <div class="list-group">
+                    <div class="list-group-item">
+                      <h6>Integración GitHub</h6>
+                      <a href="https://github.com/barbicoutinho/UADE_DW_UVA4_Integracion-GitHub" class="btn btn-outline-primary btn-sm me-2" target="_blank">Repositorio</a>
+                      <a href="https://barbicoutinho.github.io/UADE_DW_UVA4_Integracion-GitHub/" class="btn btn-outline-success btn-sm" target="_blank">Ver en GitHub Pages</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <!-- UVA 2: Formato de Cajas -->
-            <div class="list-group-item">
-              <h6>UVA 2: Formato de Cajas</h6>
-              <a href="https://github.com/barbicoutinho/UADE_DW_UVA2_Cajas" class="btn btn-outline-primary btn-sm me-2" target="_blank" rel="noopener noreferrer">Repositorio</a>
-              <a href="https://barbicoutinho.github.io/UADE_DW_UVA2_Cajas/" class="btn btn-outline-success btn-sm" target="_blank" rel="noopener noreferrer">Ver en GitHub Pages</a>
-            </div>
-
-            <!-- UVA 2: Unidades de Medida -->
-            <div class="list-group-item">
-              <h6>UVA 2: Unidades de Medida</h6>
-              <a href="https://github.com/barbicoutinho/UADE_DW_UVA2_unidades" class="btn btn-outline-primary btn-sm me-2" target="_blank" rel="noopener noreferrer">Repositorio</a>
-              <a href="https://barbicoutinho.github.io/UADE_DW_UVA2_unidades/" class="btn btn-outline-success btn-sm" target="_blank" rel="noopener noreferrer">Ver en GitHub Pages</a>
-            </div>
-
-            <!-- UVA 2: Flexbox y Grid -->
-            <div class="list-group-item">
-              <h6>UVA 2: Flexbox y Grid</h6>
-              <a href="https://github.com/barbicoutinho/UADE_DW_UVA2_Flexbox-y-Grid" class="btn btn-outline-primary btn-sm me-2" target="_blank" rel="noopener noreferrer">Repositorio</a>
-              <a href="https://barbicoutinho.github.io/UADE_DW_UVA2_Flexbox-y-Grid/" class="btn btn-outline-success btn-sm" target="_blank" rel="noopener noreferrer">Ver en GitHub Pages</a>
-            </div>
-
-            <!-- UVA 2: Ejercicio integrador -->
-            <div class="list-group-item">
-              <h6>UVA 2: Ejercicio integrador</h6>
-              <a href="https://github.com/barbicoutinho/UADE_DW_UVA2_integrador" class="btn btn-outline-primary btn-sm me-2" target="_blank" rel="noopener noreferrer">Repositorio</a>
-              <a href="https://barbicoutinho.github.io/UADE_DW_UVA2_integrador/" class="btn btn-outline-success btn-sm" target="_blank" rel="noopener noreferrer">Ver en GitHub Pages</a>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+          </div> <!-- accordion -->
+        </div> <!-- bg -->
+      </div> <!-- col -->
+    </div> <!-- row -->
+  </div> <!-- container -->
 
   <!-- FOOTER -->
   <footer class="text-end p-3 mt-5 footer-custom">
     <small>Curso: 15130 / Profesora: Patricia Litovicius</small>
   </footer>
 
-  <!-- Bootstrap JS & modo oscuro-->
+  <!-- Bootstrap JS y Script modo oscuro -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
   <script src="../js/modo-oscuro.js" defer></script>
 </body>
 
 </html>
+
