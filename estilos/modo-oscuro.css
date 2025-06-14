@@ -1,14 +1,10 @@
-/* estilos/modo-oscuro.css */
+/* Modo oscuro usando [data-bs-theme="dark"] */
 
-/* Uso de selector [data-bs-theme="dark"] para activar modo oscuro */
-
-/* Fondo y texto general */
 [data-bs-theme="dark"] {
   background-color: #121212 !important;
   color: #f0f0f0 !important;
 }
 
-/* Textos */
 [data-bs-theme="dark"] h1,
 [data-bs-theme="dark"] h2,
 [data-bs-theme="dark"] h3,
@@ -18,7 +14,6 @@
   color: #f0f0f0 !important;
 }
 
-/* Navbar */
 [data-bs-theme="dark"] .navbar {
   background-color: #1f1f1f !important;
 }
@@ -35,7 +30,6 @@
   color: #ffffff !important;
 }
 
-/* Tabla */
 [data-bs-theme="dark"] table {
   background-color: #1f1f1f !important;
   color: #f0f0f0 !important;
@@ -50,22 +44,15 @@
   background-color: #2a2a2a !important;
 }
 
-/* Footer */
-[data-bs-theme="dark"] .footer-custom {
-  background-color: #1f1f1f !important;
-  color: #f0f0f0 !important;
-}
-
-/* Fondo container */
 [data-bs-theme="dark"] .container-custom {
   background-color: #1a1a1a !important;
   padding: 2rem;
   border-radius: 8px;
 }
 
-/* Fondo del footer en modo oscuro */
 [data-bs-theme="dark"] .footer-custom {
-  background-color: #1f1f1f;
-  border-top: none; /* Eliminar borde superior */
+  background-color: #1f1f1f !important;
+  color: #f0f0f0 !important;
+  border-top: none !important;
+  box-shadow: none !important; /* Evita línea negra arriba del footer */
 }
-
