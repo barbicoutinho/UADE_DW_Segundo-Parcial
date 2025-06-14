@@ -1,52 +1,107 @@
 /* estilos/modo-oscuro.css */
 
-/* Uso del atributo data-bs-theme="dark" para activar modo oscuro */
+/* ----------------------------------------
+   MODO OSCURO GENERAL: se activa con data-bs-theme="dark"
+------------------------------------------*/
 
 /* Fondo y texto general */
 [data-bs-theme="dark"] {
   background-color: #121212 !important;
-  color: #f0f0f0 !important;
+  color: #e0e0e0 !important;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Textos principales */
+/* Texto principales con buen contraste */
 [data-bs-theme="dark"] h1,
 [data-bs-theme="dark"] h2,
 [data-bs-theme="dark"] h3,
 [data-bs-theme="dark"] p,
 [data-bs-theme="dark"] small,
 [data-bs-theme="dark"] a {
-  color: #f0f0f0 !important;
+  color: #e0e0e0 !important;
 }
 
-/* Links en modo oscuro */
+/* Links modo oscuro */
 [data-bs-theme="dark"] a:hover,
 [data-bs-theme="dark"] a:focus {
   color: #ffffff !important;
   text-decoration: underline;
+  outline: none;
 }
 
-/* Navbar */
+/* NAVBAR: fondo oscuro y texto claro con centrado correcto */
 [data-bs-theme="dark"] .navbar {
   background-color: #1f1f1f !important;
   transition: background-color 0.3s ease;
 }
 
+/* Centrar contenedor navbar como en otras páginas */
+[data-bs-theme="dark"] .navbar .container {
+  max-width: 1140px; /* mismo ancho que Bootstrap container */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Texto navbar */
 [data-bs-theme="dark"] .navbar-brand,
 [data-bs-theme="dark"] .nav-link {
-  color: #f0f0f0 !important;
+  color: #e0e0e0 !important;
   transition: color 0.3s ease;
 }
 
 [data-bs-theme="dark"] .nav-link:hover,
 [data-bs-theme="dark"] .nav-link:focus {
   color: #ffffff !important;
+  outline: none;
 }
 
-/* Tabla */
+/* Contenedor principal (.container-custom) fondo oscuro, centrado y padding uniforme */
+[data-bs-theme="dark"] .container-custom {
+  background-color: #1a1a1a !important;
+  padding: 2rem;
+  border-radius: 8px;
+  margin: 2rem auto 2rem auto;
+  max-width: 1140px; /* para evitar que se extienda más que el navbar */
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+}
+
+/* Formularios: inputs y textarea fondo oscuro, texto claro y borde visible */
+[data-bs-theme="dark"] input,
+[data-bs-theme="dark"] textarea,
+[data-bs-theme="dark"] select {
+  background-color: #2a2a2a !important;
+  color: #e0e0e0 !important;
+  border: 1px solid #444 !important;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  border-radius: 4px;
+}
+
+[data-bs-theme="dark"] input::placeholder,
+[data-bs-theme="dark"] textarea::placeholder {
+  color: #bbb !important;
+}
+
+/* Botones */
+[data-bs-theme="dark"] .btn-primary {
+  background-color: #0d6efd !important;
+  border-color: #0d6efd !important;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+[data-bs-theme="dark"] .btn-primary:hover,
+[data-bs-theme="dark"] .btn-primary:focus {
+  background-color: #0b5ed7 !important;
+  border-color: #0a58ca !important;
+  outline: none;
+}
+
+/* Tablas */
 [data-bs-theme="dark"] table {
   background-color: #1f1f1f !important;
-  color: #f0f0f0 !important;
+  color: #e0e0e0 !important;
   border-color: #333 !important;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -60,51 +115,21 @@
   background-color: #2a2a2a !important;
 }
 
-/* Footer */
+/* Footer: fondo oscuro, texto claro, sin sombras ni bordes, con padding y centrado */
 [data-bs-theme="dark"] .footer-custom {
   background-color: #1f1f1f !important;
-  color: #f0f0f0 !important;
-  box-shadow: none !important;  /* quita sombra para evitar línea negra */
-  border-top: none !important;   /* elimina borde superior */
+  color: #e0e0e0 !important;
+  box-shadow: none !important;
+  border-top: none !important;
+  margin-top: 0 !important;
+  padding: 1rem 2rem !important;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Fondo container */
-[data-bs-theme="dark"] .container-custom {
-  background-color: #1a1a1a !important;
-  padding: 2rem;
-  border-radius: 8px;
-  transition: background-color 0.3s ease;
-}
-
-/* Inputs y formularios (mejorar contraste y fondo en modo oscuro) */
-[data-bs-theme="dark"] input,
-[data-bs-theme="dark"] textarea,
-[data-bs-theme="dark"] select {
-  background-color: #2a2a2a !important;
-  color: #f0f0f0 !important;
-  border: 1px solid #444 !important;
-  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-}
-
-[data-bs-theme="dark"] input::placeholder,
-[data-bs-theme="dark"] textarea::placeholder {
-  color: #bbb !important;
-}
-
-/* Botones (bootstrap default en modo oscuro) */
-[data-bs-theme="dark"] .btn-primary {
-  background-color: #0d6efd !important;
-  border-color: #0d6efd !important;
-}
-
-[data-bs-theme="dark"] .btn-primary:hover,
-[data-bs-theme="dark"] .btn-primary:focus {
-  background-color: #0b5ed7 !important;
-  border-color: #0a58ca !important;
-}
-
-/* Evitar scrollbar visible con fondo oscuro */
+/* Scrollbar oscuro */
 [data-bs-theme="dark"] ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -115,7 +140,7 @@
   border-radius: 4px;
 }
 
-/* Asegurar que íconos del toggle también cambien visibilidad */
+/* Iconos toggle modo oscuro/claros */
 [data-bs-theme="dark"] #icon-luna {
   display: none !important;
 }
@@ -123,24 +148,22 @@
 [data-bs-theme="dark"] #icon-sol {
   display: inline !important;
 }
-/* Fondo oscuro general */
-[data-bs-theme="dark"] body,
-[data-bs-theme="dark"] html {
+
+/* Asegurar cuerpo y html tomen el fondo oscuro sin margen */
+[data-bs-theme="dark"] html,
+[data-bs-theme="dark"] body {
   background-color: #121212 !important;
-  color: #f0f0f0 !important;
+  color: #e0e0e0 !important;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Quitar margen entre contenido y footer */
+/* Evitar margin-bottom extra en container para evitar separación visual innecesaria */
 [data-bs-theme="dark"] .container-custom {
   margin-bottom: 0 !important;
 }
 
-/* Estilo limpio para footer */
-[data-bs-theme="dark"] .footer-custom {
-  background-color: #1f1f1f !important;
-  color: #f0f0f0 !important;
-  box-shadow: none !important;
-  border-top: none !important;
-  margin-top: 0 !important;
-  padding: 1rem 2rem !important;
-}
+/* Corrección para que formulario y contenido no se desalineen en móviles */
+/* Bootstrap ya maneja muy bien el layout, pero asegurar centrado con flexbox en contenedores si necesario */
