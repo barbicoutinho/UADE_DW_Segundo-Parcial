@@ -123,3 +123,24 @@
 [data-bs-theme="dark"] #icon-sol {
   display: inline !important;
 }
+/* Fondo oscuro general */
+[data-bs-theme="dark"] body,
+[data-bs-theme="dark"] html {
+  background-color: #121212 !important;
+  color: #f0f0f0 !important;
+}
+
+/* Quitar margen entre contenido y footer */
+[data-bs-theme="dark"] .container-custom {
+  margin-bottom: 0 !important;
+}
+
+/* Estilo limpio para footer */
+[data-bs-theme="dark"] .footer-custom {
+  background-color: #1f1f1f !important;
+  color: #f0f0f0 !important;
+  box-shadow: none !important;
+  border-top: none !important;
+  margin-top: 0 !important;
+  padding: 1rem 2rem !important;
+}
