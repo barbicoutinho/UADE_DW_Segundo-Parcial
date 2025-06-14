@@ -1,17 +1,16 @@
-// js/modo-oscuro.js
-
 document.addEventListener('DOMContentLoaded', () => {
   const themeToggle = document.getElementById('themeToggle');
   const iconLuna = document.getElementById('icon-luna');
   const iconSol = document.getElementById('icon-sol');
   const htmlTag = document.documentElement;
 
-  // Cargar tema guardado
+  // Cargar tema guardado o usar 'light' por defecto
   const savedTheme = localStorage.getItem('theme') || 'light';
   setTheme(savedTheme);
 
   themeToggle.addEventListener('click', () => {
-    const newTheme = htmlTag.getAttribute('data-bs-theme') === 'light' ? 'dark' : 'light';
+    const currentTheme = htmlTag.getAttribute('data-bs-theme');
+    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
     setTheme(newTheme);
   });
 
@@ -19,12 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     htmlTag.setAttribute('data-bs-theme', theme);
     localStorage.setItem('theme', theme);
 
-    if (theme === 'dark') {
-      iconLuna.style.display = 'none';
-      iconSol.style.display = 'inline';
-    } else {
-      iconLuna.style.display = 'inline';
-      iconSol.style.display = 'none';
-    }
+    iconLuna.style.display = theme === 'dark' ? 'none' : 'inline';
+    iconSol.style.display = theme === 'dark' ? 'inline' : 'none';
   }
 });
