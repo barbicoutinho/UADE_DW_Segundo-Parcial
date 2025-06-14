@@ -1,6 +1,6 @@
 /* estilos/modo-oscuro.css */
 
-/* Uso de selector [data-bs-theme="dark"] para  modo oscuro */
+/* Uso de selector [data-bs-theme="dark"] para activar modo oscuro */
 
 /* Fondo y texto general */
 [data-bs-theme="dark"] {
@@ -54,8 +54,8 @@
 [data-bs-theme="dark"] .footer-custom {
   background-color: #1f1f1f !important;
   color: #f0f0f0 !important;
-  box-shadow: none !important;  /* QUITAR sombra para evitar línea negra */
-  border-top: none !important;   /* Eliminar borde superior */
+  box-shadow: none !important;  /* quita sombra para evitar línea negra */
+  border-top: none !important;   /* elimina borde superior */
 }
 
 /* Fondo container */
