@@ -15,20 +15,20 @@ body {
 }
 
 .navbar-brand {
-    color: #000 !important;
+    color: #000;
     font-weight: bold;
     font-size: 1.5rem;
 }
 
 .nav-link {
-    color: #2F2F2F !important;
+    color: #2F2F2F;
     font-weight: 500;
     transition: color 0.3s;
 }
 
 .nav-link:hover,
 .nav-link.active {
-    color: #000 !important;
+    color: #000;
     text-decoration: underline;
 }
 
@@ -122,15 +122,16 @@ li {
         padding: 10px;
     }
 }
+
 html, body {
     height: 100%;
-  }
-  
-  body {
+}
+
+body {
     display: flex;
     flex-direction: column;
-  }
-  
-  .container-custom {
+}
+
+.container-custom {
     flex: 1;
-  }
+}
