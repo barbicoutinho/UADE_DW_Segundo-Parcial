@@ -1,0 +1,40 @@
+/* estilos/modo-oscuro.css */
+
+body.modo-oscuro {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.modo-oscuro .navbar {
+  background-color: #1f1f1f;
+}
+
+body.modo-oscuro .navbar .nav-link {
+  color: #ccc;
+}
+
+body.modo-oscuro .navbar .nav-link:hover {
+  color: #fff;
+}
+
+body.modo-oscuro .table {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  border-color: #444;
+}
+
+body.modo-oscuro .table thead {
+  background-color: #2b2b2b;
+  color: #fff;
+}
+
+body.modo-oscuro .footer-custom {
+  background-color: #1f1f1f;
+  color: #aaa;
+  border-top: 1px solid #333;
+}
+
+/* Opcional: enlaces */
+body.modo-oscuro a {
+  color: #9ecbff;
+}
