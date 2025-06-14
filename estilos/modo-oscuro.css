@@ -1,6 +1,4 @@
-/* estilos/modo-oscuro.css */
-
-/* ----------------------------------------
+//* ----------------------------------------
    MODO OSCURO GENERAL: se activa con data-bs-theme="dark"
 ------------------------------------------*/
 
@@ -29,19 +27,11 @@
   outline: none;
 }
 
-/* NAVBAR: fondo oscuro y texto claro con centrado correcto */
+/* NAVBAR: fondo oscuro y texto claro */
+/* Ya no tocamos .navbar .container para no romper el layout */
 [data-bs-theme="dark"] .navbar {
   background-color: #1f1f1f !important;
   transition: background-color 0.3s ease;
-}
-
-/* Centrar contenedor navbar como en otras páginas */
-[data-bs-theme="dark"] .navbar .container {
-  max-width: 1140px; /* mismo ancho que Bootstrap container */
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 /* Texto navbar */
@@ -63,7 +53,7 @@
   padding: 2rem;
   border-radius: 8px;
   margin: 2rem auto 2rem auto;
-  max-width: 1140px; /* para evitar que se extienda más que el navbar */
+  max-width: 1140px; /* igual que en modo claro */
   box-sizing: border-box;
   transition: background-color 0.3s ease;
 }
@@ -164,6 +154,3 @@
 [data-bs-theme="dark"] .container-custom {
   margin-bottom: 0 !important;
 }
-
-/* Corrección para que formulario y contenido no se desalineen en móviles */
-/* Bootstrap ya maneja muy bien el layout, pero asegurar centrado con flexbox en contenedores si necesario */
